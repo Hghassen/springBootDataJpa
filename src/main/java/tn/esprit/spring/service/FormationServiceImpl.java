@@ -30,46 +30,29 @@ public class FormationServiceImpl implements IFormationService{
 	}
 
 	@Override
-	public Formation addFormation(Formation f) {
-		return formationRepository.save(f);
-	}
-
-	@Override
-	public Formation updateFormation(Formation f) {
-		return formationRepository.save(f);
+	public Formation addFormation(Formation u) {
+		return formationRepository.save(u);
 	}
 
 	@Override
 	public void deleteFormation(String id) {
 		formationRepository.deleteById(Long.parseLong(id));
-	}
-
-	
-
-	@Override
-	public Formation retrieveFormation(String id) {
-		Formation f = formationRepository.findById(Long.parseLong(id)).orElse(null);
-		l.info("Formation returned :" + f);
-		return f;
-	}
-
-	@Override
-	public Formation addFormation(Formation u) {
-		// TODO Auto-generated method stub
-		return null;
+		
 	}
 
 	@Override
 	public Formation updateFormation(Formation u) {
-		// TODO Auto-generated method stub
-		return null;
+		return formationRepository.save(u);
 	}
 
 	@Override
 	public Formation retrieveFormation(String formationId) {
-		// TODO Auto-generated method stub
-		return null;
+		Formation f = formationRepository.findById(Long.parseLong(formationId)).orElse(null);
+		l.info("Formation returned :" + f);
+		return f;
 	}
+
+	
 
 	
 

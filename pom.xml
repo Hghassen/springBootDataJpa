@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>tn.esprit.spring</groupId>
 	<artifactId>spring-boot-data-jpa-entity</artifactId>
-	<version>12.0</version>
+	<version>13.0</version>
 	<name>spring-boot-data-jpa-entity</name>
 	<description>spring-boot-data-jpa-entity</description>
 	<properties>
